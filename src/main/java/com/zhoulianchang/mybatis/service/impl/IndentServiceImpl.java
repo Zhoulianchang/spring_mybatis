@@ -72,7 +72,7 @@ public class IndentServiceImpl implements IndentService {
             PageInfo pageInfo = new PageInfo<>(data);
             return ResultUtils.success(pageInfo);
         } catch (ParseException e) {
-            logger.info("error is :{}", e.getMessage());
+            logger.info("error is : {}", e.getMessage());
             return ResultUtils.failed("时间的格式必须是yyyy-MM-dd格式");
         }
     }
